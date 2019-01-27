@@ -1,5 +1,6 @@
 # Palladium packages
 PRODUCT_PACKAGES += \
+    CustomDoze \
     pdC \
     PalladiumSetupWizard \
     Terminal \
