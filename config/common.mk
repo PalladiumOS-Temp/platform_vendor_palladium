@@ -180,3 +180,6 @@ DEVICE_PACKAGE_OVERLAYS += vendor/palladium/overlay/common
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/palladium/config/partner_gms.mk
+
+# Versioning
+include vendor/palladium/config/version.mk

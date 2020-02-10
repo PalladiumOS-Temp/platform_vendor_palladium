@@ -4,13 +4,12 @@ ADDITIONAL_BUILD_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 endif
 
-# LineageOS System Version
+# Palladium-OS System Version
 ADDITIONAL_BUILD_PROPERTIES += \
-    ro.palladium.version=$(PALLADIUM_VERSION) \
-    ro.palladium.releasetype=$(PALLADIUM_BUILDTYPE) \
-    ro.palladium.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
-    ro.modversion=$(PALLADIUM_VERSION) 
-
-# Palladium Platform Display Version
-ADDITIONAL_BUILD_PROPERTIES += \
-    ro.palladium.display.version=$(PALLADIUM_DISPLAY_VERSION)
+  ro.palladium.version=$(PALLADIUM_DISPLAY_VERSION) \
+  ro.palladium.build.status=$(PALLADIUM_BUILDTYPE) \
+  ro.modversion=$(PALLADIUM_MOD_VERSION) \
+  ro.palladium.build.date=$(BUILD_DATE) \
+  ro.palladium.buildtype=$(PALLADIUM_BUILDTYPE) \
+  ro.palladium.fingerprint=$(PALLADIUM_FINGERPRINT) \
+  ro.palladium.device=$(PALLADIUM_BUILD) 
