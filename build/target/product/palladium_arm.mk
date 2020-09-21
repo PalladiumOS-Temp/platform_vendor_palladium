@@ -12,11 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, build/target/product/aosp_x86_64.mk)
+$(call inherit-product, build/target/product/aosp_arm.mk)
 
-include vendor/palladium/build/target/product/lineage_generic_target.mk
+include vendor/palladium/build/target/product/palladium_generic_target.mk
 
-PRODUCT_NAME := lineage_x86_64
+TARGET_NO_KERNEL_OVERRIDE := true
+TARGET_USES_64_BIT_BINDER := true
 
-PRODUCT_SDK_ADDON_NAME := lineage
-PRODUCT_SDK_ADDON_SYS_IMG_SOURCE_PROP := $(LOCAL_PATH)/source.properties
+PRODUCT_NAME := palladium_arm
