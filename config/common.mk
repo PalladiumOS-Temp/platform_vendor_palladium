@@ -67,10 +67,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=log
 
 # Include AOSP audio files
-include vendor/palladium/config/aosp_audio.mk
+#include vendor/palladium/config/aosp_audio.mk
 
 # Include Palladium audio files
-include vendor/palladium/config/palladium_audio.mk
+#include vendor/palladium/config/palladium_audio.mk
 
 # TWRP
 ifeq ($(WITH_TWRP),true)
