@@ -88,24 +88,17 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
-# Bootanimation
-PRODUCT_PACKAGES += \
-    bootanimation.zip
-
 # AOSP packages
 PRODUCT_PACKAGES += \
     Terminal
 
 # Palladium packages
 PRODUCT_PACKAGES += \
-    PalladiumParts \
-    PalladiumSettingsProvider \
     PalladiumSetupWizard \
     Updater
 
 # Themes
 PRODUCT_PACKAGES += \
-    PalladiumThemesStub \
     ThemePicker
 
 # Extra tools in Palladium
@@ -163,12 +156,6 @@ PRODUCT_PACKAGES_DEBUG += \
 # Root
 PRODUCT_PACKAGES += \
     adb_root
-ifneq ($(TARGET_BUILD_VARIANT),user)
-ifeq ($(WITH_SU),true)
-PRODUCT_PACKAGES += \
-    su
-endif
-endif
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
