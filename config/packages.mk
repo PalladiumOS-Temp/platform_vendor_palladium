@@ -3,8 +3,9 @@ PRODUCT_PACKAGES += \
     PalladiumSetupWizard \
     Updater \
     Terminal \
-    ThemePicker
-
+    ThemePicker \
+    QuickAccessWallet
+    
 # Extra tools in Palladium
 PRODUCT_PACKAGES += \
     7z \
