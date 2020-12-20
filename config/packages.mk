@@ -5,7 +5,8 @@ PRODUCT_PACKAGES += \
     Terminal \
     ThemePicker \
     QuickAccessWallet \
-    StitchImage
+    SimpleDeviceConfig \
+    StitchImage 
 
 # Extra tools in Palladium
 PRODUCT_PACKAGES += \
