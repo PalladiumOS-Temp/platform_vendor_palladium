@@ -12,4 +12,5 @@ ADDITIONAL_BUILD_PROPERTIES += \
   ro.palladium.build.date=$(BUILD_DATE) \
   ro.palladium.buildtype=$(PALLADIUM_BUILDTYPE) \
   ro.palladium.fingerprint=$(PALLADIUM_FINGERPRINT) \
+  ro.palladium.build.variant=$(PALLADIUM_BUILD_VARIANT) \
   ro.palladium.device=$(PALLADIUM_BUILD) 

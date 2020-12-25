@@ -116,6 +116,11 @@ include vendor/palladium/config/version.mk
 # Include extra packages
 include vendor/palladium/config/packages.mk
 
+ifeq ($(PALLADIUM_BUILD_VARIANT), GAPPS)
+# GApps
+include vendor/gapps/config.mk
+endif
+
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 ifneq ($(TARGET_DISABLE_ALTERNATIVE_FACE_UNLOCK), true)
