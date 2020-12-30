@@ -13,6 +13,11 @@ ifeq ($(PALLADIUM_BUILDTYPE), OFFICIAL)
         Updater
 endif
 
+ifeq ($(EXTRA_FOD_ANIMATIONS),true)
+PRODUCT_PACKAGES += \
+    FodAnimationResources
+endif
+
 # Extra tools in Palladium
 PRODUCT_PACKAGES += \
     7z \
