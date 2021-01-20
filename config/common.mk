@@ -113,6 +113,9 @@ DEVICE_PACKAGE_OVERLAYS += vendor/palladium/overlay/common
 # Versioning
 include vendor/palladium/config/version.mk
 
+# BootAnimation
+-include vendor/palladium/config/bootanimation.mk
+
 # Include extra packages
 include vendor/palladium/config/packages.mk
 
