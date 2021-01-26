@@ -118,6 +118,7 @@ include vendor/palladium/config/version.mk
 
 # PalladiumFragments
 -include vendor/PalladiumFragments/Pdfragments.mk
+-include vendor/PalladiumFragments/switch/switch.mk
 
 # Include extra packages
 include vendor/palladium/config/packages.mk
