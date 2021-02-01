@@ -127,6 +127,10 @@ PRODUCT_COPY_FILES += \
 endif
 endif
 
+# Gboard
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.com.google.ime.kb_pad_port_b=1
+
 # Plugins
 include packages/apps/Plugins/plugins.mk
 
