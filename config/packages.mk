@@ -66,6 +66,13 @@ PRODUCT_PACKAGES += \
     GesturalNavigationOverlayMedium \
     GesturalNavigationOverlayHidden
 
+# Pill radius
+PRODUCT_PACKAGES += \
+    GesturalNavigationRadiusLow \
+    GesturalNavigationRadiusVeryLow \
+    GesturalNavigationRadiusHidden
+
+
 # Primary Themes
 PRODUCT_PACKAGES += \
     SystemPitchBlackOverlay \
@@ -83,3 +90,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AccentColorOPRedOverlay \
     AccentColorPixelBlueOverlay
+
+
