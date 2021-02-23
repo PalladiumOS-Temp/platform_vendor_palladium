@@ -116,6 +116,9 @@ include vendor/palladium/config/version.mk
 # BootAnimation
 -include vendor/palladium/config/bootanimation.mk
 
+# PalladiumFragments
+-include vendor/PalladiumFragments/Pdfragments.mk
+
 # Include extra packages
 include vendor/palladium/config/packages.mk
 
