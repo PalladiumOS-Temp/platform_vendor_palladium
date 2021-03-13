@@ -1,12 +1,16 @@
 # Palladium packages
 PRODUCT_PACKAGES += \
     PalladiumSetupWizard \
-    Updater \
     Terminal \
     ThemePicker \
     QuickAccessWallet \
     SimpleDeviceConfig \
     StitchImage 
+
+ifeq ($(PALLADIUM_BUILDTYPE), OFFICIAL)
+    PRODUCT_PACKAGES += \
+        Updater
+endif
 
 # Extra tools in Palladium
 PRODUCT_PACKAGES += \
