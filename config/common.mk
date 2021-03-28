@@ -135,7 +135,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
 include packages/apps/Plugins/plugins.mk
 
 #opstuff
+ifeq  ($(WITH_OPAPPS), true)
 include vendor/opstuff/config.mk
+else
+include vendor/palladium/packages/apps/Lawnchair/lawnchair.mk
+endif
 
 # BootAnimation
 -include vendor/palladium/config/bootanimation.mk
