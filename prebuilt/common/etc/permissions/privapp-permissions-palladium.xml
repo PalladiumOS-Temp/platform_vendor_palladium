@@ -57,4 +57,8 @@
         <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
     </privapp-permissions>
 
+    <privapp-permissions package="com.google.android.settings.intelligence.IntelligenceApplication">
+        <permission name="android.permission.READ_DEVICE_CONFIG"/>
+    </privapp-permissions>
+
 </permissions>
