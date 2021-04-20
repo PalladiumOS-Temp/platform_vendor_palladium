@@ -134,6 +134,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Plugins
 include packages/apps/Plugins/plugins.mk
 
+#opstuff
+include vendor/opstuff/config.mk
+
 # BootAnimation
 -include vendor/palladium/config/bootanimation.mk
 
