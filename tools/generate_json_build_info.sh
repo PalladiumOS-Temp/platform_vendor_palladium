@@ -13,7 +13,7 @@ if [ "$1" ]; then
             md5=$(cat "$file_path.md5sum" | cut -d' ' -f1)
             datetime=$(date +%s)
             id=$(sha256sum $file_path | awk '{ print $1 }')
-            link="https://download.palladiumos.me/?dir=${device_code}/${file_name}"
+            link="https://download.palladiumos.me/${device_code}/${file_name}"
             echo "{" > $file_path.json
             echo "  \"response\": [" >> $file_path.json
             echo "    {" >> $file_path.json
